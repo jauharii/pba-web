@@ -1,0 +1,46 @@
+.content { 
+    padding-bottom: 80px; 
+}
+
+.fixed-bottom-bar { 
+    height: 64px; 
+    border-top: 1px solid rgba(0,0,0,.08); 
+    background: #fff; 
+}
+
+.btn-tab { 
+    border-radius: 0; 
+}
+
+.btn-tab.active { 
+    color: #32CD32 !important; 
+}
+
+/* Landscape mode (width > 768px) */
+@media (min-width: 768px) {
+    .content {
+        margin-left: 64px;  /* reduced from 200px */
+        padding-bottom: 0;
+    }
+
+    .fixed-bottom-bar {
+        height: 100vh;
+        width: 64px;   /* reduced from 200px */
+        border-top: none;
+        border-right: 1px solid rgba(0,0,0,.08);
+    }
+
+    .fixed-bottom-bar .d-flex {
+        height: auto;
+        flex-direction: column !important;
+    }
+
+    .btn-tab {
+        padding: 0.75rem 0;  /* adjusted padding */
+    }
+
+    /* Make text smaller in sidebar */
+    .btn-tab .fw-bold {
+        font-size: 0.8rem;
+    }
+}
