@@ -44,3 +44,59 @@
         font-size: 0.8rem;
     }
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212529;
+        color: #f8f9fa;
+    }
+
+    .card {
+        background-color: #343a40;
+        border-color: #495057;
+    }
+
+    .fixed-bottom-bar {
+        background-color: #343a40;
+        border-top-color: #495057;
+    }
+
+    @media (min-width: 768px) {
+        .fixed-bottom-bar {
+            border-right-color: #495057;
+        }
+    }
+
+    .btn-tab {
+        color: #f8f9fa;
+    }
+
+    .btn-tab.active {
+        color: #32CD32 !important;
+    }
+
+    .table {
+        --bs-table-bg: #212529;
+        --bs-table-border-color: #495057;
+        --bs-table-striped-bg: #2c3034;
+        --bs-table-striped-color: #f8f9fa;
+        --bs-table-active-bg: #343a40;
+        --bs-table-active-color: #f8f9fa;
+        --bs-table-hover-bg: #343a40;
+        --bs-table-hover-color: #f8f9fa;
+        color: #f8f9fa;
+    }
+
+    .form-control {
+        background-color: #343a40;
+        color: #f8f9fa;
+        border-color: #495057;
+    }
+
+    .form-select {
+        background-color: #343a40;
+        color: #f8f9fa;
+        border-color: #495057;
+    }
+}
